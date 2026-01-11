@@ -1,0 +1,167 @@
+\section { Kaffettino }
+
+\subsection{ Idea }
+
+\par
+{
+    Piattaforma che permette di organizzare l'inventario e la vendita di prodotti nelle aulette.
+}
+
+\subsection { Analisi dei requisiti }
+
+\paragraph{Amministratori}
+
+\par
+{
+    Gli amministratori potranno accedere alla dashboard dei resoconti e visualizzare i resoconti delle vendite e delle ricariche filtrando per giorno, settimana, mese, anno.
+
+    I resoconti potranno essere filtrati come globali, per singole aulette, per utente.
+
+    I resoconti di una determinata auletta dovranno essere accessibili solo da amministratori di un corso afferente a quell'auletta.
+
+    Tutti i resoconti saranno scaricabili come Excel.
+
+    Gli amministratori, tramite il portale, potranno ricaricare i conti degli utenti, ma non potranno ricaricare da soli il proprio conto, ci dovrà essere un secondo amministratore che lo carichi.
+
+    Potranno anche assegnare e modificare la tessera di un utente.
+
+    Potranno aggiungere prodotti nel magazzino (con l'opzione di aggiungere prodotti non presenti nel magazzino o crearne di nuovi).
+
+    Una volta che i prodotti vengono creati non possono essere cancellati, siccome per storicità bisogna mantenere le compravendite degli utenti.
+
+    Per rimuovere un prodotto dalla vendita, infatti, si potrà semplicemente delistare, ma continuerà ad esistere nella base di dati.
+
+    Gli amministratori potranno anche modificare i nomi ed i costi dei prodotti, ma non si potrà cancellare.
+
+    Potranno anche aggiungere, modificare e delistare aulette.
+
+    Potranno anche modificare il debito massimo di ogni auletta (default 3 $\times$ valore del caffè).
+
+    Qualora durante l'acquisto si supera il debito massimo, l'acquisto non va a buon fine segnalando il saldo insufficiente.
+
+    All'inizio di ogni settimana, verrà inviata una mail dal sistema esortando di saldare il proprio debito a prescindere dalla quantità (anche se sei di un centesimo in debito in sostanza).
+
+    Il debito vale per singolo magazzino, e non si potrà comprare nessun prodotto se pagando si sfora il debito massimo.
+
+    Ogni prodotto dovrà avere i dati del fornitore: Nome, Indirizzo, N Telefono (opzionale), Email (opzionale).
+
+    Gli amministratori potranno modificare la soglia di avviso per ogni prodotto, in modo tale che il sistema una volta raggiunta quella soglia mandi una mail ai gestori auletta.
+
+    Gli amministratori potranno gestire dei coupon per dare una percentuale di sconto agli acquisti.
+
+    I coupon non saranno cumulabili e saranno validi solamente per i prodotti scelti dagli amministratori, avranno inoltre una chiara data di scadenza.
+
+    Gli utenti potranno abilitare lo sconto sul prossimo acquisto se dal portale lo abiliteranno.
+
+}
+
+\paragraph{ Utenti }
+
+\par
+{
+    Ogni utente (studente, staff, admin) potrà effettuare la registrazione al servizio ma per avere il conto abilitato dovrà avere una carta associata.
+
+    Qualora un utente prova a fare l'accesso al servizio ma non ha una carta associata, allora deve apparire il messaggio "Impossibile proseguire siccome non hai ancora una carta associata! Per favore vieni in auletta per avere la card".
+
+    Gli utenti potranno richiedere una card sostitutiva in caso di smarrimento.
+
+    Quando la card verrà assegnata riceveranno una mail che conferma che l'operazione è andata a buon fine.
+
+    Ogni utente potrà visualizzare il proprio saldo.
+    
+    Ogni utente potrà visualizzare il proprio storico (data ed ora, importo, auletta di consumazione), spesa totale (oggi, settimana, mese, anno), spesa media (giornaliera, settimanale).
+
+    Inoltre implementare il confronto con lo storico (questo mese +12\% rispetto alla media) e previsioni.
+    
+    Implementare un istogramma con tipologie di prodotti acquistati e quantità.
+
+    Includere anche statistiche anonime ("bevi più caffè del 60\% degli studenti).
+
+    Ovviamente per partecipare alle statistiche bisogna dare il consenso.
+
+    Caffè gratis offerto al compleanno, con tanto di musichetta e messaggino.
+
+    Il giorno del compleanno dovrà essere notificata la persona via mail facendogli gli auguri e spronandola a venire in auletta e riscattare il caffè gratuito.
+    
+    Il saldo dell'utente è spendibile solamente nel magazzino afferente all'auletta dove è stata ricaricata la card. Quindi per esempio, il saldo ricaricato ad ingegneria sarà spendibile ad ingegneria ed il saldo ad economia sarà spendibile solo ad economia.
+
+    Il saldo fa riferimento al magazzino e non alle aulette perché così manteniamo le aulette del terzo piano e del deim come afferenti ad ingegneria.
+
+    Gli amministratori potranno visualizzare le statistiche del proprio magazzino, con trend di consumo, previsioni di guadagni e di consumi ecc...
+
+    Gli amministratori potranno anche impostare e recupere il pin della card dell'auletta nell'eventualità non vogliano che si usi per badgare .
+
+}
+
+\paragraph{ La piattaforma embedded }
+
+\par
+{
+    L'embedded dovrà prevedere un modo per cambiare account del wifi per collegarsi ad unipa.
+    
+    Dovrà prevedere un modo per cambiare l'auletta di appartenenza (questo per fare in modo di poter spostare eventualmente l'embedded).
+    
+    Dovrà scaricare i prodotti del magazzino alla quale fa afferenza, e dovrà prevedere un modo per ricaricare la lista di prodotti senza accendere e spegnere.
+
+    Dovrà riprodurre la canzone di buon compleanno al primo badge del compleanno di un utente, concedendogli un caffè gratis.
+
+    In caso di acquisto, dovrebbe mostrare: "Grazie NomeUtente".
+
+    Deve prevedere la mascotte Coffy che cambia espressione in base a quello che succede a schermo.
+
+    Dovrà visualizzare i messaggi di errori specifici del backend (Nessuna connessione, prodotto non esistente, saldo insufficiente)
+
+    In caso di errore critico, visualizzare una schermata di fallback con Coffy triste e con scritta di chiamare un amministratore (pensare a sensori non disponibili, errori critici di memoria).
+
+}
+
+\paragraph{ La piattaforma }
+\par
+{
+    Nella pagina principale della piattaforma bisognerà allegare una foto diversa di "buongiornissimo kaffè!" diversa ad ogni caricamento.
+
+    Le immagini devono essere, in ordine di priorità:
+    \begin{itemize}
+        \item Giorno del compleanno
+        \item Debito
+        \item Festività (Natale, Santa Lucia, Pasqua, Pasquetta, Capodanno, San Silvestro, Halloween, Morti, Epifania, Santo Stefano, Festa della donna, Festa della repubblica, Pride, Anniversario Ingegneria ed altre associazioni, Capodanno, Black Friday, Domenica delle palme, festa della liberazione, Festa della mamma, Festa del papà, Festa dei nonni, Compleanno di rosone, San francesco, San Valentino, Ferragosto, Giorno della memoria, ecc \ldots) 
+        \item Giorno della settimana (Lunedì, martedì, mercoledì, \ldots)
+    \end{itemize}
+
+    La piattaforma dovrà segnalare agli amministratori quando le unità del magazzino scendono sotto la soglia, consigliando di fare rifornimento.
+}
+
+\paragraph{ Auditing }
+\par
+{
+    Tutte le azioni devono essere loggate, in particolare le azioni amministrative:
+    \begin{itemize}
+        \item Ricariche, modifiche prezzi, assegnazioni card
+    \end{itemize}
+
+    I log non si potranno cancellare e verranno memorizzati direttamente in OS. Saranno di tipo append-only e non modificabili, al fine di garantire l’integrità storica delle operazioni.
+
+    Bisogna distinguere anche gli sconti dovuti dal compleanno ecc.
+}
+
+\paragraph{ Extra }
+
+\par
+{
+    L'embedded dovrà prevedere un modo per sbloccare un dispensatore di cialde.
+    
+    Dovrebbe prevedere delle animazioni durante il caricamento.
+
+    È complicato ma sarebbe interessante prevedere un comportamento offline in modo da gestire gli acquisti in assenza di connessione, mettendo tutto in una coda di transazioni.
+    Questo sarebbe utile per quei giorni dove la connessione UNIPA è congestionata, si potrebbe memorizzare tutto in memoria flash?
+
+    Sarebbe ideale predisporre la piattaforma per accettare in futuro anche pagamenti tramite carta di credito per ricaricare il saldo.
+
+}
+
+\subsection { Stato }
+
+\par
+{
+    In sviluppo, i componenti sono stati acquistati e si sta procedendo a creare la PCB ed il design finale.
+}

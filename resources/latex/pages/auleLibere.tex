@@ -1,0 +1,63 @@
+\section { Aule Libere }
+
+\subsection{ Idea }
+
+\par
+{
+    La piattaforma delle aule libere servirà per visualizzare le aule libere dell'ateneo in una determinata data ed ora, oppure anche in un range di date ed ore.
+}
+
+\subsection { Analisi dei requisiti }
+
+\paragraph{ La piattaforma }
+\par
+{
+    Dovrà essere un wrapper per https://offertaformativa.unipa.it/offweb/public/aula/aulaCalendar.seam, ma offrendo qualche funzionalità in più.
+    La piattaforma dovrà permettere di selezionare:
+    \begin{itemize}
+        \item Data (o range di date) nella quale si vuole prenotare l'aula
+        \item Fascia oraria nella quale si vuole prenotare l'aula
+        \item Quantità di posti necessari
+        \item Tipologia di aula (Didattica, Didattica innovativa, Informatica, Impianto sportivo, Laboratorio, Sala Interna)
+        \item Edificio
+        \item Dipartimento
+        \item Scuole (Formazione insegnanti, Scuola di medicina e chirurgia)
+        \item Attributi dell'aula (Provvista di LIM, Provvista di lavagna, provvista di amplificazione, provvista di postazioni computer, in ristrutturazione)
+        \item Se provvista di postazioni computer
+    \end{itemize}
+
+    Se verrà selezionata l'opzione "provvista di postazioni computer", allora si dovrà poter selezionare anche la quantità di postazioni necessaria
+
+    Lo scaricamento iniziale delle aulee e dei loro attributi avverrà dal sito dell'università.
+
+    La piattaforma dovrà poter lasciare modificare agli amministratori le aule.
+
+    Questo vorrà dire:
+    \begin{itemize}
+        \item Creare, modificare e cancellare aulee esistenti
+        \item Aggiungere, modificare e rimuovere gli attributi dell'aula
+    \end{itemize}
+    
+    Una volta effettuata la ricerca, la piattaforma dovrà mostrare la lista di aule da poter selezionare.
+    Le aule in ristrutturazione si dovranno visualizzare ma dovranno spuntare come non prenotabili.
+    
+    Una volta selezionata un aula, verrà visualizzata nella propria pagina:
+    \begin{itemize}
+        \item La posizione su una mappa leaflet.
+        \item Gli orari nella quale l'aula è impegnata
+    \end{itemize}
+    
+    Inoltre, la piattaforma, dovrà tenere traccia delle personalità dell'ateneo che si occupano di prenotare le aule nei vari dipartimenti.
+    Gli amministratori, dovranno poter modificare queste personalità ed il loro dipartimenti di riferimento.
+    Più personalità possono avere a che fare con un singolo dipartimento.
+    La piattaforma quindi, dovrà preparare una mail da mandare alla personalità di riferimento afferente a quell'aula.
+    La funzionalità della preparazione delle mail dovrà essere utilizzabile solo da membri di staff o amministratori.
+
+}
+
+\subsection { Stato }
+
+\par
+{
+    In ideazione
+}

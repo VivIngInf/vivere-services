@@ -1,0 +1,80 @@
+\section { Drive }
+
+\subsection{ Idea }
+
+\par
+{
+    Utility che permette agli studenti di condividere appunti e materiale di studio.
+}
+
+\subsection { Analisi dei requisiti }
+
+\par
+{
+    Tutti gli studenti potranno accedere alla piattaforma se sono stati verificati nel db.
+
+    Gli studenti potranno visualizzare, scaricare e chiedere l'approvazione degli appunti.
+
+    Questo vuol dire che i membri di staff dovranno controllare il materiale mandato dai ragazzi, potranno accettarlo o eliminarlo sempre con un commento costruttivo per fare capire agli studenti come contribuire alla comunità.
+
+    I membri di staff potranno visualizzare, scaricare, aggiungere e cancellare gli appunti condivisi.
+
+    Ogni file sarà identificato con:
+    \begin{itemize}
+        \item Nome del file
+        \item Nome dell'autore (possibilità di lasciarlo anonimo)
+        \item Data di caricamento
+    \end{itemize}
+
+    La piattaforma dovrà mantenere un log di elementi caricati, modificati e rimossi.
+
+    La pagina iniziale dovrà permettere di selezionare qualsiasi macroarea (Ingegneria, Medicina, ecc...), dopo di che si potrà selezionare il corso, successivamente le materie (mettendo in una cartella a parte le materie non più erogate), subito dopo l'anno di erogazione ed infine la docenza.
+
+    Ogni elemento dovrà avere dei tag che permetteranno di filtrare.
+    
+    I tag in questione indicheranno la tipologia: Appunti, Esercitazioni, Esercizi, Video (possibilmente anche link esterni tipo youtube), slide, documentazioni, etc \ldots
+
+    Oltre ad un tag di tipologia ci saranno anche i tag di "ufficialità": Materiale del docente, materiale approvato dal docente, materiale non approvato dal docente.
+
+    Inoltre ogni elemento avrà un ranking in termini di punteggio (stelle) dato dagli studenti, in questo modo gli studenti potranno sapere se in un determinato blocco di appunti manca qualcosa o ci sono degli errori, oppure se è ancora pertinente per poter preparare la materia.
+
+    Insieme al punteggio, gli utenti potranno lasciare dei commenti e questi verranno moderati dagli amministratori, cancellandoli o approvandoli.
+
+    Se dalla pubblicazione del commento passerà più di una settimana, il commento verrà approvato automaticamente.
+
+    I file si potranno anche sostituire, in modo tale da aggiornare le criticità. 
+    
+    Per questo bisogna anche tenere traccia dei cambiamenti (stile git con i commenti dei commit).
+
+    Gli utenti potranno anche flaggare dei commenti come offensivi, ed in quel caso potrebbero essere prese azioni disciplinari contro l'offendente.
+
+}
+
+\paragraph{ REGOLE }
+\par
+{
+    Alcune regole per tutelare la piattaforma devono essere messe in atto, infatti chi trasgredirà questo regolamento potrebbe venire bannato da altri amministratori.
+   
+    \begin{itemize}
+        \item Non sarà permesso caricare video-lezioni dei docenti e registrazioni senza consenso esplicito con email formale inoltrata ai gestori.
+        \item Gli appunti non si potranno caricare come file word ma solo come PDF filigranato (vedesi utility di filigrana)
+        \item Le dispense dei professori non si dovranno filigranare.
+        \item Si dovrà promuovere un contesto di collaborazione ed ogni forma di hate-speech sarà punità con il ban.
+    \end{itemize}
+    
+}
+
+\paragraph{ EXTRA }
+\par
+{
+    Sarebbe interessante implementare un sistema di moderazione AI dei commenti.
+    Sarebbe interessante prevedere una barra di ricerca che permetta di navigare il file system più velocemente.
+    Potrebbe essere carino incentivare il submitting di materiale magari dando accesso a sconti tramite kaffettino? O comunque dei premi / badge. In questo caso ogni studente potrebbe avere il proprio profilo e quindi li potremmo fare visualizzare i suoi contributi.
+}
+
+\subsection { Stato }
+
+\par
+{
+    In ideazione
+}

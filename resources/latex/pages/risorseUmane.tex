@@ -1,0 +1,115 @@
+\section { Risorse Umane (HR) }
+
+\subsection{ Idea }
+
+\par
+{
+    La piattaforma risorse umane è la piattaforma di gestione dei profili utente degli associati e degli studenti. \\
+    Tutti gli studenti e gli associati dovranno registrarsi tramite questa piattaforma per poter usufruire della suite Vivere.
+}
+
+\subsection { Analisi dei requisiti }
+
+\par{
+    Gli utenti dovranno essere di 4 tipi:
+    
+    \begin{itemize}
+        \item \textbf{Studente}: Utente che ha un account e quindi ha usufruito almeno una volta di un qualsiasi servizi della suite Vivere.
+        \item \textbf{Staff}: Utente che è stato promosso da un amministratore a membro di staff (associato).
+        \item \textbf{Amministratore}: Utente che è stato promosso da un amministratore ad amministratore.
+        \item \textbf{Super Admin}: Utente che è già presente nelle migrazioni originali, ha gli stessi permessi dell'amministratore, ma i suoi permessi non possono essere revocati.
+    \end{itemize}
+
+    Deve essere previsto un amministratore per ogni corso, questo implica che una persona potrà essere amministratore anche di più corsi, siccome potrebbe capitare che prenda in gestione un corso simile dove ancora non ci sono associati.
+
+    Dunque, una persona può far parte di più staff, questo per evitare che ci siano corsi senza staff e che quindi si blocchi l'accesso ai servizi vivere per quel determinato corso.
+
+    Gli amministratori potranno modificare e bloccare gli utenti
+
+    Nel caso una persona bannata prova a rifarsi l'account tramite la seconda mail istituzionale, il sistema deve bloccare in automatico la richiesta, riconoscendo giustamente che è la stessa persona (grazie al formato UNIPA).
+    
+    Gli amministratori potranno cambiare a piacimento il ruolo degli utenti.
+
+    Durante la registrazione, bisognerà specificare:
+    \begin{itemize}
+        \item Nome e Cognome
+        \item Anno di nascita (per usufruire di kaffettino)
+        \item Corso
+        \item Anno di corso: da prevedere anche FC, Laureando, Part Time, 4° superiore e 5° superiore, ma deve essere bloccato l'accesso ai minori di 16 anni.
+        \item Numero di telefono
+        \item Email: rigorosamente formato UNIPA, tranne se risulta come studente delle superiori
+        \item Tag Telegram (opzionale)
+        \item Tag Instagram (opzionale)
+        \item Scuola di provenienza (opzionale, ma obbligatoria per gli staffer per la piattaforma orientamento)
+        \item Password
+    \end{itemize}
+
+    Le password dovranno essere forti e non comuni, per evitare accessi indesiderati alla piattaforma, le specifiche:
+    \begin{itemize}
+        \item Minimo 12 caratteri
+        \item Presente almeno un carattere speciale
+        \item Presente almeno un numero
+        \item Presente almeno una lettera maiuscola
+        \item Presente almeno una lettera minuscola        
+    \end{itemize}
+
+    Alla login implementare rate limiting e invalidazione token, con hasing bcrypt.
+
+    Effettuare il controllo per password comuni e possibilmente attaccabili tramite rainbow table.
+
+    Ovviamente ogni utente può resettare password tramite una mail che gli arriva direttamente in casella, previa conferma dell'indirizzo email oscurato.
+
+    Durante la registrazione di un utente verrà usata la mail come autenticazione a due fattori obbligatoriamente, in quanto serve a verificare che l'utente è veramente chi si dichiara di essere.
+    
+    Alla registrazione di un utente, il sistema deve effettuare uno scrape dei professori presenti nell'ateneo ed eventualmente mostrare accanto a quel nome un avviso se un match è stato trovato. Questo per evitare che i professori possano accedere ai servizi della piattaforma se non autorizzati da uno staffer.
+    
+    Gli utenti che si registreranno visualizzeranno una schermata di attesa nel frattempo che il loro account verrà accettato, siccome gli amministratori dovranno verificare l'iscrizione per renderla valida.
+
+    Quando verrà effettuata una registrazione, verrà mandata una mail agli amministratori dello stesso corso dello studente che ha fatto la registrazione, esortandoli ad accettarlo.
+
+    Un qualsiasi staffer può accettare una qualsiasi richiesta di registrazione.
+    
+    Il nome visualizzato e l'username per fare l'accesso sarà in formato unipa (es: MarioLuigi.Rossi03)
+
+    A seguito di un ban, dovrà essere mandata una mail con la motivazione del ban (banalmente bisogna inserire un form dove si specifica la motivazione).
+
+    In qualsiasi momento un utente può decidere di disiscriversi da eventuali mailing list oppure anche dalla piattaforma.
+
+    Il super admin è un utente che non fa manutenzione regolarmente delle piattaforme, ma viene chiamato solamente per questioni di GDPR compliance, log auditing, ecc...
+
+    Ogni utente non studente, può essere associato ad una o più aulette come gestore auletta. Egli riceverà diverse comunicazioni in merito alla gestione delle aulette a lui assegnate.
+
+    Gli amministratori potranno aggiungere e rimuovere gestori auletta a piacimento. 
+    
+    Quando un utente verrà promosso a gestore auletta, gli dovrà arrivare una mail dove lo si esorta a venire nella sua auletta di riferimento a prendere le chiavi.
+
+    Inoltre, quando verrà rimosso come gestore, verrà esortato a venire in auletta per restituire le chiavi.
+
+    All'inizio dell'anno accademico gli studenti frequentanti le superiori verranno messi in una sezione "da confermare" dove bisognerà manualmente confermarli per farli passare di anno.
+
+    Ogni inizio di anno accademico la piattaforma in automatico incrementerà l'anno accademico delle persone.
+
+    In fase di registrazione, la piattaforma verificherà che l'età dello studente sia superiore o uguale a 16 anni. In caso contrario, la registrazione non sarà consentita.
+
+    In fase di registrazione, si potrà scegliere se ricevere le email e per quali servizi. Ovviamente con opzione di cambiare preferenza in qualsiasi momento dal proprio profilo utente.
+
+    Gli amministratori potranno specificare se un determinato utente possiede un ruolo istituzionale (ad esempio CDD). Ovviamente una persona può ricoprire più ruoli istituzionali.
+
+    Magari si potrebbe fare in modo che il sito web prenda i ccs da questo DB?
+
+    Ad ogni modo, per quanto riguarda i ruoli istituzionali, il sistema deve prevedere la data nella quale i rappresentanti decadono e di conseguenza archiviare il periodo di attività di rappresentanza se non rinnovato.
+
+    Gli studenti, appena risulteranno agibili per avere una mail unipa, saranno obbligati a cambiarla.
+
+    Il sistema dovrà verificare il corretto inserimento di nome e cognome facendo il confronto con la mail istituzionale.
+
+    Gli utenti potranno ricevere svariate notifiche dai sistemi Vivere, consultabili dall'apposita sezione.
+
+}
+
+\subsection { Stato }
+
+\par
+{
+    In implementazione
+}

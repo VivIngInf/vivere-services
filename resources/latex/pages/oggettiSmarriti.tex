@@ -1,0 +1,86 @@
+\section { Oggetti Smarriti }
+
+\subsection{ Idea }
+
+\par
+{
+    La piattaforma degli oggetti smarriti permetterà agli utenti di reclamare degli oggetti smarriti come propri.
+}
+
+\subsection { Analisi dei requisiti }
+
+\paragraph{ La piattaforma }
+\par
+{
+    
+    La piattaforma si dovrà interfacciare con quella degli orari, in modo tale da dare un consiglio per quanto riguarda i corsi e la relativa annata nella quale fare girare l'annuncio.
+
+    A proposito di annuncio, deve preparare un copy per quanto riguarda il mandare la comunicazione nei gruppi dei singoli anni.
+
+    Dovrà arrivare una mail ai ragazzi se l'oggetto smarrito è possibile che sia stato perso esclusivamente nel loro corso di appartenenza, questo per evitare email spam.
+
+}
+
+\paragraph{ Gli amministratori }
+\par
+{
+    Gli amministratori potranno inserire, modificare e cestinare un oggetto smarrito.
+
+    Per ogni oggetto smarrito bisognerà specificare:
+    \begin{itemize}
+        \item Una foto dell'oggetto
+        \item Una descrizione, idealmente con una caratteristica unica dell'oggetto
+        \item Edificio ed aula in cui è stato trovato
+        \item Un orario indicativo nella quale è stato perso.
+        \item Dei tag (elettronica, documenti, materiale di cartoleria, ecc\ldots)
+    \end{itemize}
+
+    Potranno contrassegnare un oggetto come consegnato solo dopo che almeno una persona si è prenotata.
+
+    In caso di cestinazione, non si cancellerà la entry nel db, ma verrà contrassegnata come cestinata (ovvereo che l'oggetto è stato gettato).
+
+    Un amministratore può anche annullare un reclamo e rendere di nuovo l'oggetto reclamabile se la persona che ha effettuato il primo reclamo non si presenta oppure ha perso interesse nel reclamare l'oggetto.
+
+    Ovviamente tutte le modifiche effettuate su un item dovranno essere loggate.
+}
+
+\par
+{
+    
+    La piattaforma si dovrà interfacciare con quella degli orari, in modo tale da dare un consiglio per quanto riguarda i corsi e la relativa annata nella quale fare girare l'annuncio.
+
+    A proposito di annuncio, deve preparare un copy per quanto riguarda il mandare la comunicazione nei gruppi dei singoli anni.
+
+    Dovrà arrivare una mail ai ragazzi se l'oggetto smarrito è possibile che sia stato perso esclusivamente nel loro corso di appartenenza, questo per evitare email spam.
+
+    Tutti gli oggetti saranno sempre listati nello storico anche se consegnati o cestinati, in modo tale da essere sempre rintracciabili.
+
+    Dopo un mese da quando l'oggetto è stato trovato, la piattaforma manderà una mail agli amministratori dell'auletta afferente a quell'oggetto per spronarli a cestinare l'oggetto smarrito.
+
+    Questo perché ovviamente se non verrà effettuato nessun reclamo l'oggetto andrà cestinato e quindi distrutto.
+
+}
+
+
+\paragraph{ Gli studenti }
+\par
+{
+    Gli studedenti potranno visionare l'archivio degli oggetti smarriti in base all'auletta di afferenza del corso ed in base all'aula nella quale è stato ritrovato l'oggetto smarrito.
+
+    Si potrà filtrare anche per parole chiave ("Astuccio", "Orologio", "Laptop").
+
+    Potranno fare un reclamo e proclamare come proprio l'oggetto smarrito, verranno quindi esortati sia dalla piattaforma che da una mail automatica a presentarsi giorno tot per un ritiro.
+}
+
+\paragraph{ EXTRA }
+\par
+{
+    Potrebbe essere interessante integrare il tutto con una mappa dell'università e le relative coordinate.
+}
+
+\subsection { Stato }
+
+\par
+{
+    In ideazione
+}

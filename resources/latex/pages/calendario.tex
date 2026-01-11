@@ -1,0 +1,60 @@
+\section { Calendario }
+
+\subsection{ Idea }
+
+\par
+{
+    La piattaforma calendario è pensata per un uso principalmente interno, a differenza della piattaforma eventi. 
+    Permetterà di sapere quali sono gli eventi in associazione e di mostrarli in calendario.
+}
+
+\subsection { Analisi dei requisiti }
+
+\paragraph{Gli amministratori}
+\par
+{
+    Potranno aggiungere, modificare, cancellare gli inviti agli eventi.
+    Un evento sarà caratterizzato da:
+    \begin{itemize}
+        \item Nome
+        \item Giorno ed orario
+        \item Tag ("CDD", "CCS", "Tutti", "Riunione di staff", ETC\ldots).
+        \item Staff di appartenenza ("Ingegneria", "Economia", "Ateneo"\ldots)
+        \item Priorità (?) probabilmente verrà abusata dagli amministratori
+    \end{itemize}
+}
+
+\paragraph{Gli utenti}
+\par
+{
+    Potranno registrarsi o cancellarsi dalle varie categorie di eventi.
+    Quindi gli utenti potranno gestire gli eventi come meglio credono e potranno filtrare le tipologie di eventi che gli arrivano, ad esclusione di quelli dettati dalla proprià carica istituzionale.
+}
+
+\paragraph{ La Piattaforma }
+\par
+{
+    Dovrà spedire gli inviti via mail ed essi dovranno essere compatibili con calendari google, outlook.
+
+    
+}
+
+\paragraph{ La piattaforma embedded }
+\par
+{
+    Sarà una semplice dashboard di visualizzazione calendario da mettere in auletta, si potrebbe tranquillamente fare con una vecchia raspberry pi ed uno schermo.
+    Ovviamente questa sarebbe aggiornata in tempo reale con sync dalla piattaforma web
+}
+
+\paragraph{ EXTRA }
+\par
+{
+    Sarebbe interessante cercare di capire se si possa automatizzare l'invio in base a ciò che già ci viene spedito (vedesi CDD).
+}
+
+\subsection { Stato }
+
+\par
+{
+    In ideazione
+}

@@ -1,0 +1,186 @@
+\documentclass[a4paper]{article}
+
+\usepackage[italian]{babel}
+
+\usepackage{lipsum}
+
+\usepackage{geometry}
+\usepackage{graphicx}
+
+\usepackage{titlesec} % per modificare lo stile dei titoli
+
+\usepackage{enumitem} % Pacchetto che ci permette di indentare correttamente le liste numerate
+
+\setlength{\parindent}{0pt} % Indentazione nulla per evitare di spostare i paragrafi a destra
+\setlength\parskip{1em}     % Spaziatura tra paragrafi
+
+% Pacchetti per il banner
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tikz}
+\usepackage{tocloft}
+
+\usepackage{float}
+
+% Abilita numerazione e TOC fino al livello subparagraph
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+% Definizione hook per banner
+\newcommand{\addbanner}{
+  \AddToHook{shipout/background}{%
+    \begin{tikzpicture}[remember picture, overlay]
+      \node[anchor=north west, inner sep=0pt] at (current page.north west) {
+        \includegraphics[height=\paperheight, width=7cm]{images/Vertical Banner.png}
+      };
+    \end{tikzpicture}
+  }
+}
+
+\newcommand{\removebanner}{
+  \RemoveFromHook{shipout/background}{%
+    \begin{tikzpicture}[remember picture, overlay]
+      \node[anchor=north west, inner sep=0pt] at (current page.north west) {
+        \includegraphics[height=\paperheight, width=7cm]{images/Vertical Banner.png}
+      };
+    \end{tikzpicture}
+  }
+}
+
+% Rende \paragraph simile a una "subsubsubsection"
+\titleformat{\paragraph}[block]
+  {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+
+\titleformat{\subparagraph}[block]
+  {\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+
+% Imposta spaziatura per paragrafi e subparagrafi
+\titlespacing*{\paragraph}{0pt}{1.2ex plus .2ex}{1ex plus .2ex}
+\titlespacing*{\subparagraph}{0pt}{1.2ex plus .2ex}{1ex plus .2ex}
+
+% Impostiamo il titolo della tabella dei contenuti ad Indice
+\renewcommand{\contentsname}{Indice}
+
+\title{\textbf{Analisi dei requisiti della suite vivere}}
+\author{} % Annulliamo l'autore e la data per fare spazio all'immagine
+\date{}
+
+\usepackage[hidelinks]{hyperref} % Serve per la table of contents cliccabile
+
+\renewcommand\labelitemi{{\scriptsize\textbullet}} % Per le liste puntate con puntini più piccoli
+
+% Definizione colori
+
+\definecolor{darkblue}{HTML}{071D99}
+
+\titleformat{\section}
+  {\normalfont\color{darkblue}\bfseries\Large}
+  {\thesection}{1em}{}
+
+\renewcommand{\cftsecfont}{\color{darkblue}\bfseries}
+
+\renewcommand{\cftsecpagefont}{\color{darkblue}\bfseries}
+
+\newcommand{\addtitlebackground}{
+  \AddToHookNext{shipout/background}{%
+    \begin{tikzpicture}[remember picture, overlay]
+      \fill[darkblue] (current page.south west) rectangle (current page.north east);
+    \end{tikzpicture}
+  }
+}
+
+\begin{document}
+
+    \addtitlebackground
+
+    \begin{titlepage}
+
+    \color{white} % Tutto da qui in poi sarà bianco
+    
+    \newgeometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+    \begin{figure}[t!]
+        \centering
+        \includegraphics[scale=0.10]{images/Unipa.png}
+        \begin{center}
+            \color{white}
+            \par {UNIVERSITÀ DEGLI STUDI DI PALERMO}
+            \par {DIPARTIMENTO DI INGEGNERIA}            
+        \end{center}
+    \end{figure}    
+
+    \vspace*{.25cm} % padding sopra l'immagine
+    \begin{center}
+        \includegraphics[scale=.3]{images/Logo Dev Hub.png}\\[1cm]
+        \vspace{.5cm} % Spazio sopra il titolo
+        {\Huge \textbf{Analisi dei requisiti della suite vivere}}\\[1cm]
+    \end{center}
+        
+    \vfill % Tutto ciò che segue va in fondo alla pagina
+
+    \begin{minipage}[t]{0.45\textwidth}
+        \textbf{Periti Informatici} \\        
+        Antonio Morabito \\
+        Daniele Orazio Susino
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \raggedleft                
+        \textbf{Data ultimo aggiornamento} \\
+        \today
+    \end{minipage}
+
+    \end{titlepage}
+
+    \vspace{1cm}
+    
+    \newpage
+
+    % TOC e Banner
+
+    \newgeometry{left=7.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+    \addbanner
+    
+    \tableofcontents
+    
+    % Torna al layout normale
+    \removebanner
+    \newgeometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+    \newpage
+
+    \include{pages/preambolo}
+
+    \include{pages/risorseUmane}
+
+    \include{pages/problemiTecnici}
+
+    \include{pages/kaffettino}
+
+    \include{pages/assistest}
+
+    \include{pages/drive}
+
+    \include{pages/eventi}
+
+    \include{pages/orientamento}
+
+    \include{pages/orari}
+
+    \include{pages/auleLibere}
+
+    \include{pages/qr}
+
+    \include{pages/calendario}
+
+    \include{pages/oggettiSmarriti}
+
+    \include{pages/elezioni}
+
+    \include{pages/filigrana}
+
+    \include{pages/segnalazioni}
+
+
+    
+\end{document}

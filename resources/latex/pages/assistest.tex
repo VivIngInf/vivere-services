@@ -1,0 +1,96 @@
+\section { Assistest }
+
+\subsection{ Idea }
+
+\par
+{
+    Piattaforma che permette alle aspiranti matricole di partecipare a simulazioni di prove TOLC e TOL.
+    Look molto stile gamification
+}
+
+\subsection { Analisi dei requisiti }
+
+
+\paragraph{Gli studenti}
+\par
+{
+    \textbf{Importante} Come già detto in vivere HR, gli studenti non potranno registrarsi se non hanno almeno 16 anni.
+    
+    La matricola dovrà avere un'account valido (ruolo studente).
+
+    Potranno partecipare a due tipi di simulazioni:
+    
+    \begin{itemize}
+        \item In tempo reale con l'istruttore (Stile Kahoot)
+        \item Nel tempo libero (stile quiz patente)
+    \end{itemize}
+
+    Potranno Partecipare alle simulazioni in tempo reale tramite codice alfanumerico di 6 caratteri a gruppi da 3.
+    Potranno effettuare le simulazioni private scegliendo i panetti o i pacchetti di panetti alla quale sono interessati tutte le volte che vogliono, ricevendo alla fine il summary delle risposte date.
+
+    Qualora si disconnettano durante una simulazione in tempo reale, allora verrà mantenuto lo score e si potranno riconnettere.
+    Avranno la possibilità inoltre di scegliere un nickname per la singola partita.
+
+    Potranno vedere i propri risultati per ogni simulazione fatta, con relative statistiche (media dei risultati, picco minimo e massimo) relative a tutte le simulazioni fatte e trend giornalieri, settimanali, mensili.
+    Potranno visualizzare anche l'analisi delle aree di miglioramento (es. "devi migliorare in fisica")
+
+    Potranno segnalare la risposta ad una domanda in modo tale che poi venga sistemata.
+}
+
+\paragraph{L'istruttore}
+\par
+{
+    Qualsiasi membro di staff potrà fare l'istruttore.
+
+    Potrà creare, modificare e cancellare panetti.
+    Potrà creare, modificare e cancellare pacchetti di panetti.
+
+    Un panetto è una raccolta di domande relative a un singolo argomento (ad esempio, 'Fisica', 'Matematica', ecc.), mentre un pacchetto di panetti consiste in più panetti raggruppati per argomenti o macrotemi (ad esempio, 'Fisica - Meccanica', 'Fisica - Termodinamica', ecc.).
+    Ogni domanda dovrà prevedere anche una relativa risposta.
+
+    Potrà creare, modificare e cancellare le simulazioni.
+    Visualizzare un riepilogo dei risultati degli studenti per ogni simulazione.
+    Visualizzare i risultati dei singoli studenti per ogni simulazione.
+    Visualizzare i risultati dei singoli studenti per ogni simulazione priva degli studenti.
+
+    Durante la creazione delle simulazioni, si dovranno scegliere i panetti di domande da inserire (o pacchetti di panetti).
+    Ad esempio si potrà scegliere il panetto di panetti completo di una materia (ES. "Fisica"), oppure panetti su macro argomenti divisi per materia (Es. "Fluido dinamica", "Dinamica", "Termodinamica", "Cinematica", ecc\ldots)
+
+    Qualora lo studente volesse contattare l'istruttore, la piattaforma dovrà prevedere un modo per mostrare il tag telegram/instagram o il contatto whatsapp dell'istruttore.
+
+    Una volta finito l'assistest, lo studente verrà caricato in automatico sulla piattaforma HR sulla sezione matricole.
+
+    Ogni panetto è composto da domande a risposta multipla, vero falso ed aperta. 
+    Le domande aperte saranno usate esclusivamente nel caso di conti numerici da fare (attenzione a non essere case sensitive ed a specificare bene il formato), ovviamente con un certo grado di tolleranza ai calcoli effettuati.
+
+    Gli istruttori potranno visualizzare sia i risultati generali di un'esercitazione, sia filtrandoli per utente, dando feedback direttamente tramite la piattaforma ad utenti che ne hanno bisogno, specificando la singola domanda.
+
+    Gli istruttori potranno visualizzare le domande che sono state segnalate e potranno modificarle.
+
+    Potranno dare il via alla simulazione stile kahoot manualmente, in modo tale da assicurarsi che tutti gli studenti siano entrati.
+
+}
+
+\paragraph{ La piattaforma }
+\par
+{
+    Imporrà un limite di tempo per le simulazioni real time, ma non imporrà limiti per quelle private.
+
+    Il codice alfanumerico per accedere alle lobby verrà generato sul momento, ovvero quando l'istruttore creerà la lobby.
+}
+
+\paragraph{ Extra }
+\par
+{
+    Magari aggiungere delle streak stile duolingo che permettono di ottenere qualche bonus?
+    Implementare sistema di punti in modo tale da poter fare una gara ed elargire premi al migliore?
+    Si potrebbe implementare una leaderboard dove gli studenti possono vedere i progressi rispetto agli altri.
+    La piattaforma sbloccherà contenuti multimediali in base ad una roadmap specificata dagli istruttori.
+}
+
+\subsection { Stato }
+
+\par
+{
+    In ideazione
+}

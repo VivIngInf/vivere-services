@@ -1,0 +1,105 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1} Preambolo }{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1} Introduzione }{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2} Requisiti speciali }{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2} Risorse Umane (HR) }{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1} Idea }{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2} Analisi dei requisiti }{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3} Stato }{7}{subsection.2.3}%
+\contentsline {section}{\numberline {3} ProblemiTecnici }{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1} Idea }{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2} Analisi dei requisiti }{8}{subsection.3.2}%
+\contentsline {paragraph}{\numberline {3.2.0.1}Gli utenti}{8}{paragraph.3.2.0.1}%
+\contentsline {paragraph}{\numberline {3.2.0.2} Extra }{8}{paragraph.3.2.0.2}%
+\contentsline {subsection}{\numberline {3.3} Stato }{8}{subsection.3.3}%
+\contentsline {section}{\numberline {4} Kaffettino }{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1} Idea }{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2} Analisi dei requisiti }{9}{subsection.4.2}%
+\contentsline {paragraph}{\numberline {4.2.0.1}Amministratori}{9}{paragraph.4.2.0.1}%
+\contentsline {paragraph}{\numberline {4.2.0.2} Utenti }{10}{paragraph.4.2.0.2}%
+\contentsline {paragraph}{\numberline {4.2.0.3} La piattaforma embedded }{10}{paragraph.4.2.0.3}%
+\contentsline {paragraph}{\numberline {4.2.0.4} La piattaforma }{11}{paragraph.4.2.0.4}%
+\contentsline {paragraph}{\numberline {4.2.0.5} Auditing }{11}{paragraph.4.2.0.5}%
+\contentsline {paragraph}{\numberline {4.2.0.6} Extra }{11}{paragraph.4.2.0.6}%
+\contentsline {subsection}{\numberline {4.3} Stato }{11}{subsection.4.3}%
+\contentsline {section}{\numberline {5} Assistest }{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1} Idea }{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2} Analisi dei requisiti }{12}{subsection.5.2}%
+\contentsline {paragraph}{\numberline {5.2.0.1}Gli studenti}{12}{paragraph.5.2.0.1}%
+\contentsline {paragraph}{\numberline {5.2.0.2}L'istruttore}{12}{paragraph.5.2.0.2}%
+\contentsline {paragraph}{\numberline {5.2.0.3} La piattaforma }{13}{paragraph.5.2.0.3}%
+\contentsline {paragraph}{\numberline {5.2.0.4} Extra }{13}{paragraph.5.2.0.4}%
+\contentsline {subsection}{\numberline {5.3} Stato }{13}{subsection.5.3}%
+\contentsline {section}{\numberline {6} Drive }{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1} Idea }{14}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2} Analisi dei requisiti }{14}{subsection.6.2}%
+\contentsline {paragraph}{\numberline {6.2.0.1} REGOLE }{15}{paragraph.6.2.0.1}%
+\contentsline {paragraph}{\numberline {6.2.0.2} EXTRA }{15}{paragraph.6.2.0.2}%
+\contentsline {subsection}{\numberline {6.3} Stato }{15}{subsection.6.3}%
+\contentsline {section}{\numberline {7} Eventi }{16}{section.7}%
+\contentsline {subsection}{\numberline {7.1} Idea }{16}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2} Analisi dei requisiti }{16}{subsection.7.2}%
+\contentsline {paragraph}{\numberline {7.2.0.1} Gli amministratori }{16}{paragraph.7.2.0.1}%
+\contentsline {paragraph}{\numberline {7.2.0.2} Gli utenti }{16}{paragraph.7.2.0.2}%
+\contentsline {paragraph}{\numberline {7.2.0.3} Da vedere con di maio}{16}{paragraph.7.2.0.3}%
+\contentsline {subsection}{\numberline {7.3} Stato }{16}{subsection.7.3}%
+\contentsline {section}{\numberline {8} Orientamento }{17}{section.8}%
+\contentsline {subsection}{\numberline {8.1} Idea }{17}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2} Analisi dei requisiti }{17}{subsection.8.2}%
+\contentsline {paragraph}{\numberline {8.2.0.1} Gli amministratori }{17}{paragraph.8.2.0.1}%
+\contentsline {paragraph}{\numberline {8.2.0.2} Gli staffer }{17}{paragraph.8.2.0.2}%
+\contentsline {paragraph}{\numberline {8.2.0.3} Altro }{17}{paragraph.8.2.0.3}%
+\contentsline {subsection}{\numberline {8.3} Stato }{17}{subsection.8.3}%
+\contentsline {section}{\numberline {9} Orari }{18}{section.9}%
+\contentsline {subsection}{\numberline {9.1} Idea }{18}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2} Analisi dei requisiti }{18}{subsection.9.2}%
+\contentsline {paragraph}{\numberline {9.2.0.1} Gli utenti }{18}{paragraph.9.2.0.1}%
+\contentsline {paragraph}{\numberline {9.2.0.2} Gli amministratori }{18}{paragraph.9.2.0.2}%
+\contentsline {paragraph}{\numberline {9.2.0.3} La piattaforma }{18}{paragraph.9.2.0.3}%
+\contentsline {subsection}{\numberline {9.3} Stato }{18}{subsection.9.3}%
+\contentsline {section}{\numberline {10} Aule Libere }{19}{section.10}%
+\contentsline {subsection}{\numberline {10.1} Idea }{19}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2} Analisi dei requisiti }{19}{subsection.10.2}%
+\contentsline {paragraph}{\numberline {10.2.0.1} La piattaforma }{19}{paragraph.10.2.0.1}%
+\contentsline {subsection}{\numberline {10.3} Stato }{20}{subsection.10.3}%
+\contentsline {section}{\numberline {11} QR }{21}{section.11}%
+\contentsline {subsection}{\numberline {11.1} Idea }{21}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2} Analisi dei requisiti }{21}{subsection.11.2}%
+\contentsline {paragraph}{\numberline {11.2.0.1} Gli staffer }{21}{paragraph.11.2.0.1}%
+\contentsline {subsection}{\numberline {11.3} Stato }{21}{subsection.11.3}%
+\contentsline {section}{\numberline {12} Calendario }{22}{section.12}%
+\contentsline {subsection}{\numberline {12.1} Idea }{22}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2} Analisi dei requisiti }{22}{subsection.12.2}%
+\contentsline {paragraph}{\numberline {12.2.0.1}Gli amministratori}{22}{paragraph.12.2.0.1}%
+\contentsline {paragraph}{\numberline {12.2.0.2}Gli utenti}{22}{paragraph.12.2.0.2}%
+\contentsline {paragraph}{\numberline {12.2.0.3} La Piattaforma }{22}{paragraph.12.2.0.3}%
+\contentsline {paragraph}{\numberline {12.2.0.4} La piattaforma embedded }{22}{paragraph.12.2.0.4}%
+\contentsline {paragraph}{\numberline {12.2.0.5} EXTRA }{22}{paragraph.12.2.0.5}%
+\contentsline {subsection}{\numberline {12.3} Stato }{22}{subsection.12.3}%
+\contentsline {section}{\numberline {13} Oggetti Smarriti }{23}{section.13}%
+\contentsline {subsection}{\numberline {13.1} Idea }{23}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2} Analisi dei requisiti }{23}{subsection.13.2}%
+\contentsline {paragraph}{\numberline {13.2.0.1} La piattaforma }{23}{paragraph.13.2.0.1}%
+\contentsline {paragraph}{\numberline {13.2.0.2} Gli amministratori }{23}{paragraph.13.2.0.2}%
+\contentsline {paragraph}{\numberline {13.2.0.3} Gli studenti }{24}{paragraph.13.2.0.3}%
+\contentsline {paragraph}{\numberline {13.2.0.4} EXTRA }{24}{paragraph.13.2.0.4}%
+\contentsline {subsection}{\numberline {13.3} Stato }{24}{subsection.13.3}%
+\contentsline {section}{\numberline {14} Elezioni }{25}{section.14}%
+\contentsline {subsection}{\numberline {14.1} Idea }{25}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2} Analisi dei requisiti }{25}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3} Stato }{25}{subsection.14.3}%
+\contentsline {section}{\numberline {15} Filigrana }{26}{section.15}%
+\contentsline {subsection}{\numberline {15.1} Idea }{26}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2} Analisi dei requisiti }{26}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3} Stato }{26}{subsection.15.3}%
+\contentsline {section}{\numberline {16} Segnalazioni }{27}{section.16}%
+\contentsline {subsection}{\numberline {16.1} Idea }{27}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2} Analisi dei requisiti }{27}{subsection.16.2}%
+\contentsline {paragraph}{\numberline {16.2.0.1} Gli utenti }{27}{paragraph.16.2.0.1}%
+\contentsline {paragraph}{\numberline {16.2.0.2} Ogni staffer }{27}{paragraph.16.2.0.2}%
+\contentsline {paragraph}{\numberline {16.2.0.3} Gli amministratori }{28}{paragraph.16.2.0.3}%
+\contentsline {paragraph}{\numberline {16.2.0.4} La piattaforma }{28}{paragraph.16.2.0.4}%
+\contentsline {paragraph}{\numberline {16.2.0.5} Regole }{28}{paragraph.16.2.0.5}%
+\contentsline {paragraph}{\numberline {16.2.0.6} Extra }{28}{paragraph.16.2.0.6}%
+\contentsline {subsection}{\numberline {16.3} Stato }{28}{subsection.16.3}%

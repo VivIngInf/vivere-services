@@ -1,0 +1,99 @@
+\section { Segnalazioni }
+
+\subsection{ Idea }
+
+\par
+{
+    La piattaforma delle segnalazioni è una utility che permette di effettuare delle segnalazioni riguardanti le aulee, i dipartimenti, ed in generale gli spazi universitari.
+}
+
+\subsection { Analisi dei requisiti }
+
+\paragraph{ Gli utenti }
+\par
+{
+    Potranno effettuare delle segnalazioni che saranno identificate da:
+    \begin{itemize}
+        \item Foto o video breve della problematica
+        \item Descrizione breve (Es. "LIM non funzionante").
+        \item Descrizione lunga (Es. "La LIM in aula non funziona correttamente, spesso sfarfallando rende le lezioni impossibili").
+        \item Aula o luogo (da capire se separare le due cose)
+        \item Priorità: Bassa, Media, Alta, Pericolo
+        \item Stato: Rifiutata, non segnalata, segnalata, sistemata
+        \item Tipologia: Manutenzione ordinaria, manutenzione straordinaria, ecc $\ldots$
+        \item Data segnalazione
+    \end{itemize}
+
+    Gli utenti potranno inserire solamente la foto o il video della segnalazione, le descrizioni e l'aula o il luogo.
+
+    Queste segnalazioni dovranno poi essere revisionate e confermate da membri di staff.
+
+    Ogni utente può vedere la lista di segnalazioni fatte nel proprio dipartimento, potendo inoltre filtrare per tutti i parametri della seganalzione detti prima.
+
+    Chiaramente si dovrà poter vedere anche lo storico delle segnalazioni risolte
+}
+
+\paragraph{ Ogni staffer }
+\par
+{
+    Ogni staffer potrà aggiungere, modificare e rifiutare una segnalazione.
+
+    Durante la fase di accettazione di una segnalazione, lo staffer dovrà assegnare una priorità ed una tipologia alla segnalazione.
+
+    Dovrà essere mantenuta un changelog per ogni segnalazione, ovviamente append-only.
+
+    Per rifiutare una segnalazione, bisogna però inserire un commento obbligatorio in modo tale da giustificare il rifiuto.
+
+    Potrà farsi generare una mail per poter segnalare le problematiche in base alle categorie, infatti, in genere è comodo raggruppare le segnalazioni e mandare una singola mail.
+    
+    Anche loro potranno vedere solo la lista di segnalazioni fatte nel proprio dipartimento, filtrando anche loro allo stesso modo degli utenti normali.
+}
+
+\paragraph{ Gli amministratori }
+\par
+{
+    Potranno vedere tutte le segnalazioni di tutti i dipartimenti.
+
+    Potranno filtrare in base ai dipartimenti
+
+    Potranno aggiungere o modificare le personalità che si dovranno occupare di sistemare le segnalazioni ed a quale dipartimento fanno parte.
+    Dovranno specificare di che tipologie di intervento si occupano le personalità.    
+}
+
+\paragraph{ La piattaforma }
+\par
+{
+    La piattaforma, durante la fase di creazione di una segnalazione dovrà avvertire se esiste già una segnalazione simile.
+    La piattaforma dovrà mantenere una lista di personalità che si occupano della manutenzione ed in generale di persone alla quale devono essere mandate le segnalazioni, in modo tale che in fase di segnalazione ufficiale il sistema indichi in base alla tipologia della segnalazione, la personalità alla quale mandare la mail.
+
+    La piattaforma deve prevedere che in base alle tipologie di intervento ed all'edificio ci siano diverse personalità dell'ateneo alla quale fare riferimento per le segnalazioni (Signor Vincenzo, Fanale, \ldots).
+
+    Come già detto, la piattaforma dovrà provvedere a generare/precompilare una mail per segnalare le problemmatiche, direttamente aprendo il client ed inserendo le email delle personalità interessate.
+
+    Idealmente la piattaforma aggregherà quindi ogni problematica relativa ad una tipologia specifica in un unica mail, che poi il membro di staff potrà modificare e mandare.
+
+    La piattaforma deve mandare delle mail ad ogni cambio di stato della segnalazione da loro fatta, sia per quanto riguarda la persona che ha sottomesso originariamente la segnalazione che per quella che ha mandato la mail.
+    Quindi ad ogni cambio di stato (Rifiutata, Non segnalata, segnalata, sistemata) ci sarà una rispettiva mail
+}
+
+\paragraph{ Regole }
+\par
+{
+    Alcune regole da rispettare saranno:
+    \begin{itemize}
+        \item Non si devono creare segnalazioni duplicate di altre
+    \end{itemize}
+}
+
+\paragraph{ Extra }
+\par
+{
+    Sarebbe carino implementare un sistema di analisi per quanto riguarda le statistiche di problematiche risolte, medie di problematiche del mese, aule più problematiche ecc. ecc.
+}
+
+\subsection { Stato }
+
+\par
+{
+    In ideazione
+}
