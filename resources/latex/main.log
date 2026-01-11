@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.10.30)  11 JAN 2026 04:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.10.30)  11 JAN 2026 22:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,26 +468,26 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 ) (./main.aux (./pages/preambolo.aux) (./pages/risorseUmane.aux) (./pages/problemiTecnici.aux) (./pages/kaffettino.aux) (./pages/assistest.aux) (./pages/drive.aux) (./pages/eventi.aux) (./pages/orientamento.aux) (./pages/orari.aux) (./pages/auleLibere.aux) (./pages/qr.aux) (./pages/calendario.aux) (./pages/oggettiSmarriti.aux) (./pages/elezioni.aux) (./pages/filigrana.aux) (./pages/segnalazioni.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Info: Redefining \it@ocap on input line 92.
-LaTeX Info: Redefining \it@ccap on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Info: Redefining \it@ocap on input line 90.
+LaTeX Info: Redefining \it@ccap on input line 90.
 
 
 File italian.ldf warning: 
@@ -495,7 +495,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting
-italian.ldf    on input line 92.
+italian.ldf    on input line 90.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -550,7 +550,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 92.
+Package hyperref Info: Link coloring OFF on input line 90.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -587,15 +587,15 @@ Package hyperref Info: Link coloring OFF on input line 92.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/Unipa.png, id=421, 963.6pt x 963.6pt>
+<images/Unipa.png, id=308, 963.6pt x 963.6pt>
 File: images/Unipa.png Graphic file (type png)
 <use images/Unipa.png>
-Package pdftex.def Info: images/Unipa.png  used on input line 104.
+Package pdftex.def Info: images/Unipa.png  used on input line 102.
 (pdftex.def)             Requested size: 96.36565pt x 96.36565pt.
-<images/Logo Dev Hub.png, id=423, 1027.84pt x 1027.84pt>
+<images/Logo Dev Hub.png, id=310, 1027.84pt x 1027.84pt>
 File: images/Logo Dev Hub.png Graphic file (type png)
 <use images/Logo Dev Hub.png>
-Package pdftex.def Info: images/Logo Dev Hub.png  used on input line 114.
+Package pdftex.def Info: images/Logo Dev Hub.png  used on input line 112.
 (pdftex.def)             Requested size: 308.35437pt x 308.35437pt.
 
 
@@ -646,12 +646,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 ...umberline {9.1} Idea }{18}{subsection.9.1}
+l.71 ...erline {10.3} Stato }{20}{subsection.10.3}
                                                   %
-<images/Vertical Banner.png, id=486, 829.0975pt x 3069.4675pt>
+<images/Vertical Banner.png, id=371, 829.0975pt x 3069.4675pt>
 File: images/Vertical Banner.png Graphic file (type png)
 <use images/Vertical Banner.png>
-Package pdftex.def Info: images/Vertical Banner.png  used on input line 55.
+Package pdftex.def Info: images/Vertical Banner.png  used on input line 71.
 (pdftex.def)             Requested size: 199.16458pt x 845.0195pt.
  [1
 
@@ -661,13 +661,11 @@ Package pdftex.def Info: images/Vertical Banner.png  used on input line 55.
 
 File: images/Vertical Banner.png Graphic file (type png)
 <use images/Vertical Banner.png>
-Package pdftex.def Info: images/Vertical Banner.png  used on input line 147.
+Package pdftex.def Info: images/Vertical Banner.png  used on input line 145.
 (pdftex.def)             Requested size: 199.16458pt x 845.0195pt.
 
 
 [2]
-
-[3]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -704,7 +702,7 @@ Package pdftex.def Info: images/Vertical Banner.png  used on input line 147.
 
  (./pages/preambolo.tex
 
-[4
+[3
 
 
 ])
@@ -712,25 +710,20 @@ Package pdftex.def Info: images/Vertical Banner.png  used on input line 147.
 
  (./pages/risorseUmane.tex
 
-[5
+[4
 
 
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-[6])
+[5])
 
-[7]
+[6]
 \openout2 = `pages/problemiTecnici.aux'.
 
- (./pages/problemiTecnici.tex
+ (./pages/problemiTecnici.tex)
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 13.
-
-)
-
-[8
+[7
 
 
 
@@ -739,16 +732,13 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
  (./pages/kaffettino.tex
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 12.
-
-
-
-[9
+[8
 
 
 
 ]
+
+[9]
 
 [10])
 
@@ -756,11 +746,6 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 \openout2 = `pages/assistest.aux'.
 
  (./pages/assistest.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 14.
-
-
 
 [12
 
@@ -772,11 +757,6 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 \openout2 = `pages/drive.aux'.
 
  (./pages/drive.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 53.
-
-
 
 [14
 
@@ -792,10 +772,6 @@ Overfull \hbox (73.89587pt too wide) in paragraph at lines 18--19
 []\OT1/cmr/m/n/10 Sondaggi "What About": Son-dag-gi do-ve si chie-de-ran-no una se-rie di do-man-de, pen-sa-re a https://luma.com/?locale=it 
  []
 
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 26.
-
 )
 
 [16
@@ -805,12 +781,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 ]
 \openout2 = `pages/orientamento.aux'.
 
- (./pages/orientamento.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 12.
-
-)
+ (./pages/orientamento.tex)
 
 [17
 
@@ -819,12 +790,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 ]
 \openout2 = `pages/orari.aux'.
 
- (./pages/orari.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 12.
-
-)
+ (./pages/orari.tex)
 
 [18
 
@@ -835,11 +801,6 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
  (./pages/auleLibere.tex
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 12.
-
-
-
 [19
 
 
@@ -849,12 +810,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 [20]
 \openout2 = `pages/qr.aux'.
 
- (./pages/qr.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 12.
-
-)
+ (./pages/qr.tex)
 
 [21
 
@@ -863,12 +819,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 ]
 \openout2 = `pages/calendario.aux'.
 
- (./pages/calendario.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 13.
-
-)
+ (./pages/calendario.tex)
 
 [22
 
@@ -878,11 +829,6 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 \openout2 = `pages/oggettiSmarriti.aux'.
 
  (./pages/oggettiSmarriti.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 12.
-
-
 
 [23
 
@@ -913,11 +859,6 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
  (./pages/segnalazioni.tex
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 12.
-
-
-
 [27
 
 
@@ -930,21 +871,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FF25A67D3634E0110E509E58115B67B6;13530.
+(rerunfilecheck)             Checksum: 0348C4FD67BA354F60256BC74A4D154B;9394.
  ) 
 Here is how much of TeX's memory you used:
- 22745 strings out of 473197
- 428927 string characters out of 5718604
- 919259 words of memory out of 5000000
- 45412 multiletter control sequences out of 15000+600000
+ 22725 strings out of 473197
+ 428412 string characters out of 5718604
+ 918190 words of memory out of 5000000
+ 45386 multiletter control sequences out of 15000+600000
  561635 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,93p,567b,839s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,93p,585b,839s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (29 pages, 2419326 bytes).
+Output written on main.pdf (29 pages, 611907 bytes).
 PDF statistics:
- 723 PDF objects out of 1000 (max. 8388607)
- 665 compressed objects within 7 object streams
- 132 named destinations out of 1000 (max. 500000)
- 852 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 560 compressed objects within 6 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 628 words of extra memory for PDF output out of 10000 (max. 10000000)
 

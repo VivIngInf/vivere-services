@@ -4,164 +4,162 @@
 
 \par
 {
-    Piattaforma che permette di organizzare l'inventario e la vendita di prodotti nelle aulette.
+    Piattaforma che permette di \textbf{organizzare l'inventario e la vendita di prodotti nelle aulette} agli associati.
 }
 
 \subsection { Analisi dei requisiti }
 
-\paragraph{Amministratori}
+\subsubsection{ La piattaforma }
 
-\par
-{
-    Gli amministratori potranno accedere alla dashboard dei resoconti e visualizzare i resoconti delle vendite e delle ricariche filtrando per giorno, settimana, mese, anno.
-
-    I resoconti potranno essere filtrati come globali, per singole aulette, per utente.
-
-    I resoconti di una determinata auletta dovranno essere accessibili solo da amministratori di un corso afferente a quell'auletta.
-
-    Tutti i resoconti saranno scaricabili come Excel.
-
-    Gli amministratori, tramite il portale, potranno ricaricare i conti degli utenti, ma non potranno ricaricare da soli il proprio conto, ci dovrà essere un secondo amministratore che lo carichi.
-
-    Potranno anche assegnare e modificare la tessera di un utente.
-
-    Potranno aggiungere prodotti nel magazzino (con l'opzione di aggiungere prodotti non presenti nel magazzino o crearne di nuovi).
-
-    Una volta che i prodotti vengono creati non possono essere cancellati, siccome per storicità bisogna mantenere le compravendite degli utenti.
-
-    Per rimuovere un prodotto dalla vendita, infatti, si potrà semplicemente delistare, ma continuerà ad esistere nella base di dati.
-
-    Gli amministratori potranno anche modificare i nomi ed i costi dei prodotti, ma non si potrà cancellare.
-
-    Potranno anche aggiungere, modificare e delistare aulette.
-
-    Potranno anche modificare il debito massimo di ogni auletta (default 3 $\times$ valore del caffè).
-
-    Qualora durante l'acquisto si supera il debito massimo, l'acquisto non va a buon fine segnalando il saldo insufficiente.
-
-    All'inizio di ogni settimana, verrà inviata una mail dal sistema esortando di saldare il proprio debito a prescindere dalla quantità (anche se sei di un centesimo in debito in sostanza).
-
-    Il debito vale per singolo magazzino, e non si potrà comprare nessun prodotto se pagando si sfora il debito massimo.
-
-    Ogni prodotto dovrà avere i dati del fornitore: Nome, Indirizzo, N Telefono (opzionale), Email (opzionale).
-
-    Gli amministratori potranno modificare la soglia di avviso per ogni prodotto, in modo tale che il sistema una volta raggiunta quella soglia mandi una mail ai gestori auletta.
-
-    Gli amministratori potranno gestire dei coupon per dare una percentuale di sconto agli acquisti.
-
-    I coupon non saranno cumulabili e saranno validi solamente per i prodotti scelti dagli amministratori, avranno inoltre una chiara data di scadenza.
-
-    Gli utenti potranno abilitare lo sconto sul prossimo acquisto se dal portale lo abiliteranno.
-
-}
-
-\paragraph{ Utenti }
-
-\par
-{
-    Ogni utente (studente, staff, admin) potrà effettuare la registrazione al servizio ma per avere il conto abilitato dovrà avere una carta associata.
-
-    Qualora un utente prova a fare l'accesso al servizio ma non ha una carta associata, allora deve apparire il messaggio "Impossibile proseguire siccome non hai ancora una carta associata! Per favore vieni in auletta per avere la card".
-
-    Gli utenti potranno richiedere una card sostitutiva in caso di smarrimento.
-
-    Quando la card verrà assegnata riceveranno una mail che conferma che l'operazione è andata a buon fine.
-
-    Ogni utente potrà visualizzare il proprio saldo.
+    Nella pagina principale della piattaforma bisognerà \textbf{allegare una foto "buongiornissimo kaffè!" diversa ad ogni caricamento}. 
     
-    Ogni utente potrà visualizzare il proprio storico (data ed ora, importo, auletta di consumazione), spesa totale (oggi, settimana, mese, anno), spesa media (giornaliera, settimanale).
-
-    Inoltre implementare il confronto con lo storico (questo mese +12\% rispetto alla media) e previsioni.
-    
-    Implementare un istogramma con tipologie di prodotti acquistati e quantità.
-
-    Includere anche statistiche anonime ("bevi più caffè del 60\% degli studenti).
-
-    Ovviamente per partecipare alle statistiche bisogna dare il consenso.
-
-    Caffè gratis offerto al compleanno, con tanto di musichetta e messaggino.
-
-    Il giorno del compleanno dovrà essere notificata la persona via mail facendogli gli auguri e spronandola a venire in auletta e riscattare il caffè gratuito.
-    
-    Il saldo dell'utente è spendibile solamente nel magazzino afferente all'auletta dove è stata ricaricata la card. Quindi per esempio, il saldo ricaricato ad ingegneria sarà spendibile ad ingegneria ed il saldo ad economia sarà spendibile solo ad economia.
-
-    Il saldo fa riferimento al magazzino e non alle aulette perché così manteniamo le aulette del terzo piano e del deim come afferenti ad ingegneria.
-
-    Gli amministratori potranno visualizzare le statistiche del proprio magazzino, con trend di consumo, previsioni di guadagni e di consumi ecc...
-
-    Gli amministratori potranno anche impostare e recupere il pin della card dell'auletta nell'eventualità non vogliano che si usi per badgare .
-
-}
-
-\paragraph{ La piattaforma embedded }
-
-\par
-{
-    L'embedded dovrà prevedere un modo per cambiare account del wifi per collegarsi ad unipa.
-    
-    Dovrà prevedere un modo per cambiare l'auletta di appartenenza (questo per fare in modo di poter spostare eventualmente l'embedded).
-    
-    Dovrà scaricare i prodotti del magazzino alla quale fa afferenza, e dovrà prevedere un modo per ricaricare la lista di prodotti senza accendere e spegnere.
-
-    Dovrà riprodurre la canzone di buon compleanno al primo badge del compleanno di un utente, concedendogli un caffè gratis.
-
-    In caso di acquisto, dovrebbe mostrare: "Grazie NomeUtente".
-
-    Deve prevedere la mascotte Coffy che cambia espressione in base a quello che succede a schermo.
-
-    Dovrà visualizzare i messaggi di errori specifici del backend (Nessuna connessione, prodotto non esistente, saldo insufficiente)
-
-    In caso di errore critico, visualizzare una schermata di fallback con Coffy triste e con scritta di chiamare un amministratore (pensare a sensori non disponibili, errori critici di memoria).
-
-}
-
-\paragraph{ La piattaforma }
-\par
-{
-    Nella pagina principale della piattaforma bisognerà allegare una foto diversa di "buongiornissimo kaffè!" diversa ad ogni caricamento.
-
     Le immagini devono essere, in ordine di priorità:
     \begin{itemize}
-        \item Giorno del compleanno
-        \item Debito
-        \item Festività (Natale, Santa Lucia, Pasqua, Pasquetta, Capodanno, San Silvestro, Halloween, Morti, Epifania, Santo Stefano, Festa della donna, Festa della repubblica, Pride, Anniversario Ingegneria ed altre associazioni, Capodanno, Black Friday, Domenica delle palme, festa della liberazione, Festa della mamma, Festa del papà, Festa dei nonni, Compleanno di rosone, San francesco, San Valentino, Ferragosto, Giorno della memoria, ecc \ldots) 
-        \item Giorno della settimana (Lunedì, martedì, mercoledì, \ldots)
+        \item \textbf{Giorno del compleanno}
+        \item \textbf{Debito}
+        \item \textbf{Festività} (Natale, Santa Lucia, Pasqua, Pasquetta, Capodanno, San Silvestro, Halloween, Morti, Epifania, Santo Stefano, Festa della donna, Festa della repubblica, Pride, Anniversario Ingegneria ed altre associazioni, Capodanno, Black Friday, Domenica delle palme, festa della liberazione, Festa della mamma, Festa del papà, Festa dei nonni, Compleanno di rosone, San francesco, San Valentino, Ferragosto, Giorno della memoria, ecc \ldots) 
+        \item \textbf{Giorno della settimana} (Lunedì, martedì, mercoledì, \ldots)
     \end{itemize}
 
-    La piattaforma dovrà segnalare agli amministratori quando le unità del magazzino scendono sotto la soglia, consigliando di fare rifornimento.
-}
+    La piattaforma dovrà \textbf{segnalare} agli amministratori \textbf{quando le unità del magazzino scendono sotto la soglia}, consigliando di fare rifornimento.
 
-\paragraph{ Auditing }
-\par
-{
-    Tutte le azioni devono essere loggate, in particolare le azioni amministrative:
-    \begin{itemize}
-        \item Ricariche, modifiche prezzi, assegnazioni card
-    \end{itemize}
+    All'inizio di ogni settimana, la piattaforma \textbf{invierà una mail} agli utenti indebitati, \textbf{esortando di saldare i propri debiti} a prescindere dalla quantità (anche se sei di un centesimo in debito in sostanza).
 
-    I log non si potranno cancellare e verranno memorizzati direttamente in OS. Saranno di tipo append-only e non modificabili, al fine di garantire l’integrità storica delle operazioni.
+    Il \textbf{debito vale per singolo conto}, e non si potrà comprare nessun prodotto se pagando si sfora il debito massimo.
 
-    Bisogna distinguere anche gli sconti dovuti dal compleanno ecc.
-}
+    Ogni \textbf{prodotto} dovrà avere i \textbf{dati del fornitore}: Nome, Indirizzo, N Telefono (opzionale), Email (opzionale).
 
-\paragraph{ Extra }
+    I \textbf{coupon} (codici sconto) \textbf{non saranno cumulabili} e saranno validi solamente per i prodotti scelti dagli amministratori, avranno inoltre una chiara data di scadenza.
 
-\par
-{
-    L'embedded dovrà prevedere un modo per sbloccare un dispensatore di cialde.
+    È previsto che la \textbf{card dell'auletta possa avere un PIN}, a discrezione di ogni auletta, in modo tale da evitare che le persone la usino per badgare ingiustamente.
+
+\subsubsection{ Utenti }
+
+    \textbf{Ogni utente} (studente, staff, admin) potrà \textbf{effettuare la registrazione} al servizio ma per avere il \textbf{conto abilitato dovrà avere una carta associata}.
+
+    Qualora un \textbf{utente prova a fare l'accesso al servizio senza una carta associata}, allora deve \textbf{apparire il messaggio} "Impossibile proseguire siccome non hai ancora una carta associata! Per favore vieni in auletta per avere la card".
+
+    Gli utenti potranno \textbf{richiedere una card sostitutiva in caso di smarrimento}.
+
+    Quando la \textbf{card verrà assegnata} riceveranno una \textbf{mail} che conferma che l'operazione è andata a \textbf{buon fine}.
+
+    Ogni utente potrà \textbf{visualizzare il proprio saldo}.
     
-    Dovrebbe prevedere delle animazioni durante il caricamento.
+    Ogni utente potrà \textbf{visualizzare il proprio storico} (data ed ora, importo, auletta di consumazione), spesa totale (oggi, settimana, mese, anno), spesa media (giornaliera, settimanale).
 
-    È complicato ma sarebbe interessante prevedere un comportamento offline in modo da gestire gli acquisti in assenza di connessione, mettendo tutto in una coda di transazioni.
+    Inoltre implementare il \textbf{confronto con lo storico (questo mese +12\% rispetto alla media) e previsioni}.
+    
+    Implementare un \textbf{istogramma con tipologie di prodotti acquistati e quantità}.
+
+    Includere anche \textbf{statistiche anonime} ("bevi più caffè del 60\% degli studenti).
+
+    Ovviamente per partecipare alle statistiche bisogna dare il \textbf{consenso}.
+
+    \textbf{Caffè gratis offerto al compleanno}, con tanto di \textbf{musichetta e messaggino}.
+
+    Il giorno del \textbf{compleanno} dovrà essere notificata la persona via \textbf{mail} facendogli gli auguri e \textbf{spronandola a venire in auletta} e riscattare il caffè gratuito.
+    
+    Un utente potrà avere \textbf{più conti}, il saldo \textbf{fa riferimento al magazzino e non alle aulette} perché così manteniamo le aulette del secondo, terzo piano e del DEIM come afferenti ad ingegneria.
+    Il \textbf{saldo} dell'utente è quindi \textbf{spendibile} solamente nelle \textbf{aulette con magazzino in comune} afferente all'auletta dove è stata ricaricata la card. 
+    Quindi per esempio, il saldo ricaricato ad ingegneria sarà spendibile al terzo piano, secondo piano e DEIM, mentre il saldo ad economia sarà spendibile solo ad economia.
+
+    Qualora \textbf{durante l'acquisto si supera il debito massimo}, l'acquisto non va a buon fine \textbf{segnalando il saldo insufficiente}.
+    Gli utenti potranno \textbf{abilitare i coupon sconto} sul prossimo acquisto se lo abiliteranno dal portale.
+
+\subsubsection{Amministratori}
+
+    Gli amministratori potranno \textbf{accedere alla dashboard dei resoconti e visualizzare i resoconti delle vendite e delle ricariche} filtrando per giorno, settimana, mese, anno.
+
+    I resoconti potranno essere \textbf{filtrati} come globali, per singole aulette, per utente.
+
+    I \textbf{resoconti di una determinata auletta} dovranno essere \textbf{accessibili} solo da \textbf{amministratori} di un \textbf{corso afferente a quell'auletta}.
+
+    Tutti i resoconti saranno \textbf{scaricabili come Excel}.
+
+    Gli amministratori, tramite il portale, potranno \textbf{ricaricare i conti degli utenti}, ma \textbf{non potranno ricaricare da soli il proprio conto}, ci dovrà essere un \textbf{secondo amministratore che lo carichi}.
+
+    Potranno anche \textbf{assegnare e modificare la tessera} di un utente.
+
+    Potranno \textbf{aggiungere prodotti nel magazzino} (con l'opzione di aggiungere prodotti non presenti nel magazzino ma presenti in altri magazzini, o crearne di nuovi).
+
+    Una volta che i \textbf{prodotti vengono creati non possono essere cancellati}, siccome per storicità bisogna mantenere le compravendite degli utenti.
+
+    Per rimuovere un prodotto dalla vendita, infatti, \textbf{si potrà semplicemente delistare}, ma continuerà ad esistere nella base di dati.
+
+    Gli amministratori potranno anche \textbf{modificare i nomi ed i costi dei prodotti}, ma non si potrà cancellare.
+
+    Potranno anche \textbf{aggiungere, modificare e delistare aulette}.
+
+    Potranno anche \textbf{modificare il debito massimo di ogni auletta} (default 3 $\times$ valore del caffè).
+
+    Gli amministratori potranno \textbf{modificare la soglia di avviso per ogni prodotto}, in modo tale che il sistema una volta raggiunta quella soglia mandi una mail ai gestori auletta.
+
+    Gli amministratori potranno \textbf{gestire dei coupon per dare una percentuale di sconto agli acquisti}.
+
+    Gli amministratori potranno visualizzare le \textbf{statistiche del proprio magazzino}, con trend di consumo, previsioni di guadagni e di consumi ecc...
+
+    Gli amministratori potranno anche \textbf{impostare e recupere il pin della card dell'auletta} nell'eventualità non vogliano che si usi per badgare .
+
+\subsubsection{ La piattaforma embedded }
+
+    È necessaria la \textbf{creazione e l'utilizzo di una piattaforma embedded} in quanto essa verrà predisposta in ogni locale dell'associazione per effettuare il badging dei prodotti consumati.
+
+    La piattaforma embedded avrà come componenti minimi:
+    \begin{itemize}
+        \item Microcontrollore: Idealmente un ESP32
+        \item Sensore NFC
+        \item Keypad
+        \item Schermo Oled
+        \item 3 LED (Rosso, Giallo, Verde)
+        \item Cassa
+        \item Lettore MP3
+        \item Buzzer
+    \end{itemize}
+
+    Dovrà essere creata una PCB ad hoc, per permettere ai collegamenti elettronici di operare senza interferenze e nelle condizioni ideali.
+
+    \color{red} Fare BOM (Bill Of Materials) di tutto quanto quello che sarà servito per creare la scheda PCB \color{black}
+
+    L'embedded dovrà prevedere, inserendo un apposito codice per sbloccare la modalità amministratore, un modo per \textbf{permettere di cambiare account del wifi per collegarsi al WIFI dell'ateneo}. Questo per evitare che debba venire in loco il tecnico per resettare la connessione.
+    
+    Dovrà prevedere un modo per \textbf{cambiare l'auletta di appartenenza} (questo per fare in modo di poter spostare eventualmente l'embedded).
+    
+    Dovrà \textbf{scaricare i prodotti del magazzino alla quale fa afferenza}, e dovrà prevedere un modo per \textbf{ricaricare la lista di prodotti senza accendere e spegnere}.
+
+    Dovrà \textbf{riprodurre} la canzone di \textbf{buon compleanno} al primo badge del compleanno di un utente, concedendogli un caffè gratis.
+
+    In caso di acquisto, dovrebbe mostrare: "Grazie NomeUtente!".
+
+    Deve prevedere la \textbf{mascotte Coffy} che cambia espressione in base a quello che succede a schermo.
+
+    Dovrà \textbf{visualizzare i messaggi di errori specifici} del backend (Nessuna connessione, prodotto non esistente, saldo insufficiente)
+
+    In caso di \textbf{errore critico}, visualizzare una schermata di fallback con Coffy triste e con scritta di \textbf{chiamare un amministratore} (pensare a sensori non disponibili, errori critici di memoria).
+
+
+\subsubsection{Auditing}
+
+    \textbf{Tutte le azioni devono essere loggate}, in particolare le azioni amministrative:
+
+    \begin{itemize}
+        \item Ricariche
+        \item Modifiche prezzi
+        \item Assegnazioni card
+        \item Sconti
+        \item ETC \ldots
+    \end{itemize}
+
+\subsubsection{ Extra }
+
+    L'embedded dovrà \textbf{prevedere un modo per sbloccare un dispensatore di cialde}.
+    
+    Dovrebbe prevedere delle \textbf{animazioni durante il caricamento}.
+
+    È complicato ma sarebbe interessante prevedere un \textbf{comportamento offline in modo da gestire gli acquisti in assenza di connessione}, mettendo tutto in una coda di transazioni.
     Questo sarebbe utile per quei giorni dove la connessione UNIPA è congestionata, si potrebbe memorizzare tutto in memoria flash?
 
-    Sarebbe ideale predisporre la piattaforma per accettare in futuro anche pagamenti tramite carta di credito per ricaricare il saldo.
-
-}
+    Sarebbe ideale \textbf{predisporre la piattaforma per accettare in futuro anche pagamenti tramite carta di credito} per ricaricare il saldo.
 
 \subsection { Stato }
 
-\par
-{
     In sviluppo, i componenti sono stati acquistati e si sta procedendo a creare la PCB ed il design finale.
-}

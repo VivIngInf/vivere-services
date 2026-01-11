@@ -22,6 +22,16 @@ Inoltre, i dati personali memorizzati dovranno essere minimali, ovvero essere me
 
 Dovrà essere implementato per ogni servizio un \textbf{log-auditing in append e non modificabile, accessibile solo ai "Super Admin"}.
 
-\color{red} I log saranno memorizzati per un tempo massimo di x Anni (?), da capire con Antonio questa cosa. \color{black}
+\color{red} I log saranno memorizzati per un tempo massimo di x Anni (?), da capire con Antonio questa cosa. \color{black} 
+
+Non si potranno cancellare e verranno memorizzati direttamente in OS. Saranno di tipo append-only e non modificabili, al fine di garantire l’integrità storica delle operazioni.
+
+Ogni \textbf{software} dovrà essere \textbf{adeguatamente documentato e commentato}, questo in modo tale da permettere a futuri developer di poter prendere in mano lo sviluppo senza sforzi.
+
+Ogni \textbf{software} dovrà \textbf{reindirizzare, in caso di mancata autenticazione,} alla piattaforma Risorse Umane.
+
+Bisogna prevedere un modo per fare \textbf{visualizzare i changelog al primo login utile} in una qualsiasi piattaforma.
+
+
 
 \newpage
