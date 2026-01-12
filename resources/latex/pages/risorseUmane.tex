@@ -43,6 +43,12 @@
         \item \textbf{Super Admin}: Utente che è già presente nelle migrazioni originali, ha gli stessi permessi dell'amministratore, ma i suoi permessi non possono essere revocati. Saranno gli unici a poter acceddere ai log.
     \end{itemize}
 
+    Inoltre, esclusivamente agli staffer ed agli amministratori, sarà richiesto inserire:
+    \begin{itemize}
+        \item Codice Fiscale
+        \item Citta, Provincia, stato di nascita
+    \end{itemize}
+
     Verrà usata la \textbf{mail come autenticazione a due fattori}, obbligatoriamente. Questo perché serve a verificare che l'utente è veramente chi si dichiara di essere (grazie al formato UNIPA).
 
     Alla login implementare rate limiting e invalidazione token, con hasing bcrypt.
@@ -68,6 +74,12 @@
     Gli studenti, \textbf{appena risulteranno agibili per avere una mail unipa, saranno obbligati a cambiarla} (questo per evitare persone che usano all'infinito il proprio indirizzo mail).
 
     Il sistema dovrà verificare il corretto inserimento di nome e cognome facendo il confronto con la mail istituzionale.
+
+    Il sistema dovrà prevedere un \textbf{sisteme di notifiche}, arriveranno sia in piattaforma che tramite mail.
+
+    Ogni notifica può avere dei \textbf{documenti associati in allegato}.
+
+    Ogni ottobre la piattaforma chiederà agli utenti se le informazioni sul loro anno frequentato sono corrette, in modo tale da mantenere veritero il DB.
 
 \subsubsection{Gli utenti}
 
@@ -106,6 +118,8 @@
     Gli amministratori potranno \textbf{aggiungere e rimuovere gestori auletta a piacimento}. 
         
     Gli amministratori potranno \textbf{specificare se un determinato utente possiede un ruolo istituzionale} (ad esempio CDD). Ovviamente una persona può ricoprire \textbf{più ruoli istituzionali}.
+
+    Gli amministratori potranno \textbf{mandare notifiche} in broadcast.
 
 \subsubsection{I super admin}
     Il super admin è un utente che non fa manutenzione regolarmente delle piattaforme, ma viene \textbf{chiamato solamente per questioni di GDPR compliance, log auditing, ecc}...
