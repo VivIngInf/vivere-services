@@ -2,26 +2,66 @@
 
 \subsection{ Idea }
 
-La piattaformma magazzino deve permettere di rendicontare tutti gli item comprati, in uso e utilizzati.
-
+La piattaformma magazzino deve permettere di rendicontare tutti gli item comprati, in uso ed utilizzati.
 
 \subsection { Analisi dei requisiti }
 
 \subsubsection{ La piattaforma }
 
-Sezione shop come prenotazione sarebbe interessante (Giornalino, Maglietta, felpa).
-Mi raccomando le misure delle magliette, a questo punto la tipologia del bene.
+La piattaforma dovrà differenziare tra gli item in magazzino e quelli in auletta. Questo sarà possibile tramite la scansione dei codice a barre degli item.
 
-Shopping (prenotazione), amministratori che mettono chi ha pagato, tutto poi sarà in magazzino e quindi mostrare statistiche.
-Item anche prenotabile senza già averle in magazzino per capire quante unità comprare.
+In origine, tutti gli item saranno inseriti come in magazzino e ogni volta che verranno impegnati in auletta verranno rimossi dai beni in magazzino e verranno inseriti nei beni in auletta.
 
-In magazzino si possono inserire gli ordini con allegati anche le fatture (parlarne meglio siccome molto pratico)
+\color{red} Si dovranno poter allegare dei documenti (scontrini, fatture) per ogni ordine effettuato (da capire bene, come ordiniamo? Questa parte è molto pratica, da parlarne con Depa) \color{black}
 
-Gli item possono essere dati in comodato alle persone, gli utenti devono essere spronati a restituirla.
+\subsubsection{ Gli amministratori }
 
-Possiamo implementare un lettore di codice a barra per la differenza degli item in magazzino ed in auletta
+Gli amministratori potranno creare, modificare e delistare degli item (Giornalini, Magliette, Caffè, \ldots) in magazzino, specificando se esistono diverse versioni per lo stesso item. 
 
+Gli amministratori potranno creare e modificare i tag, ad esclusione delle magliette che saranno embedded nell'app.
 
+Quindi durante la creazione dovranno inserire:
+\begin{itemize}
+    \item Nome item
+    \item Costo unitario
+    \item Versioni (Pensare a branding ingegnria, ateneo, economia\ldots)
+    \item Foto (con possibilità di inserirla per ogni versione diversa)
+    \item Quantità in magazzino
+    \item Quantità riservate
+    \item Punto di ritiro (con possibilità di inserirla per ogni versione diversa)
+    \item Se l'item è in preorder (questo implica il fatto che la quantità in magazzino possa essere uguale a 0)
+    \item Quantità massima per persona di un item per tipo (per evitare che una persona prenoti 27 magliette uguali)
+    \item Tag di tipologia per filtro (vestiario, cibo) e per opzioni uniche (taglia per le magliette)
+    \item Codice a barre per ogni variante
+\end{itemize}
+
+Gli amministratori possono decidere di dare in comodato d'uso un item bloccato ad un determinato utente, specificando anche una data ultima di riconsegna se necessario, il sistema manderà in automatico notifica e mail all'utente.
+
+Gli amministratori potranno visualizzare tutti i beni dati in comodato d'uso, a chi sono stati dati e per quanto tempo.
+
+Gli amministratori potranno mandare notifiche ed email automatiche alle persone che non avranno ancora dato indietro l'item prestato.
+
+Gli amministratori possono modificare il numero di item bloccati, nel caso vengano smarriti o semplicemente si rompono.
+
+Gli amministratori potranno impostare una prenotazione come pagata quando riceveranno i soldi fisicamente.
+
+Gli amministratori potranno ovviamente guardare le statistiche di magazzino, quanti item vengono consumati giornalmente, settimanalmente, mensilmente.
+
+Potranno anche vedere i trend e le previsioni.
+
+\subsubsection{ Gli utenti }
+
+Gli utenti potranno prenotare un qualsiasi item ed anche diverse versioni dello stesso item, rispettando la quantità massima per persona. 
+
+Ogni item verrà inserito nel carrello e quando l'utente sarà pronto potrà prenotare tutti gli item.
+
+L'utente potrà vedere una sezione apposita con tutte le sue prenotazioni e quindi sapere dove andare a ritirare i suoi oggetti.
+
+L'utente potrà vedere se ha beni in comodato d'uso ed il relativo storico di tali beni.
+
+\subsubsection{ Extra }
+
+Sarebbe interessante implementare una piattaforma embedded. Magari un semplice raspberry pi, uno schermo ed una pistola scansiona codice a barre per semplificare la vita nel uscire molti item dal magazzino.
 
 \subsection { Stato }
 
